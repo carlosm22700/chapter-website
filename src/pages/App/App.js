@@ -1,5 +1,5 @@
 import { NavBar } from '../../components/NavBar';
-import { Hero, LandingPage } from '../Hero/LandingPage'
+import { LandingPage } from '../LandingPage/LandingPage'
 import './App.css';
 
 export default function App() {

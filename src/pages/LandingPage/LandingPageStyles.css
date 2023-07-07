@@ -78,7 +78,7 @@
 .hero-button:focus,
 .hero-button:active {
   background-color: #653819;
-  border-color: ;
+  /* border-color: ; */
 }
 
 /* Additional styles for other sections/components can be added */

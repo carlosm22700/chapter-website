@@ -1,0 +1,84 @@
+@font-face {
+  font-family: Stellar;
+  src: url('../../assets/fonts/Stellar-Regular.otf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Stellar;
+  src: url('../../assets/fonts/Stellar-Bold.otf');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: Stellar;
+  src: url('../../assets/fonts/Stellar-light.otf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Stellar;
+  src: url('../../assets/fonts/Stellar-Medium.otf');
+  font-weight: 500;
+}
+
+.hero-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero-title,
+.hero-subtitle,
+.hero-description {
+  font-family: Stellar, Helvetica, sans-serif;
+  background: linear-gradient(to right, #CC0000, #FF0000); /* Use gradient for background */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.hero-subtitle {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.hero-description {
+  font-size: 1.3rem;
+  color: #CC0000;
+  padding: 0.5rem 0 2rem 0;
+}
+
+.hero-button {
+  background-color: #EEAA00;
+  border-color: #EEAA00;
+  outline: none !important;
+}
+
+.hero-button:hover,
+.hero-button:focus,
+.hero-button:active {
+  background-color: #653819;
+  border-color: ;
+}
+
+/* Additional styles for other sections/components can be added */

@@ -1,12 +1,12 @@
 import { NavBar } from '../../components/NavBar';
-import { Hero } from '../../pages/Hero/Hero'
+import { Hero, LandingPage } from '../Hero/LandingPage'
 import './App.css';
 
 export default function App() {
   return (
     <main className="App">
       <NavBar />
-      <Hero />
+      <LandingPage />
     </main>
   );
 }

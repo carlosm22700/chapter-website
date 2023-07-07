@@ -11,3 +11,5 @@ export default function App() {
   );
 }
 
+// TODO:
+//Style Navbar

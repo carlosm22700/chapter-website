@@ -1,0 +1,35 @@
+.custom-navbar {
+  background-color: #EEAA00; /* Sets the background color of the navbar */
+  padding: 0 1rem;
+}
+
+.custom-navbar .navbar-brand {
+  color: #fff; /* Sets the color of the logo text */
+  font-size: 1.5rem; /* Sets the size of the logo text */
+  font-family: Stellar; /* Sets the font of the logo text */
+}
+
+.custom-navbar .container {
+    max-width: 100%; /* use full width of the navbar*/
+    padding: 0 1rem; /* Adjust the padding as needed */
+}
+
+.custom-navbar .nav-link {
+  color: #fff; /* Sets the color of the link text */
+}
+
+.custom-navbar .nav-link:hover {
+  color: #fff; /* Sets the hover color of the link text */
+}
+
+.custom-navbar .dropdown-menu {
+  background-color: #EEAA00; /* Sets the background color of the dropdown menu */
+}
+
+.custom-navbar .dropdown-item {
+  color: #fff; /* Sets the color of the dropdown items */
+}
+
+.custom-navbar .dropdown-item:hover {
+  color: #EEAA00; /* Sets the hover color of the dropdown items */
+}

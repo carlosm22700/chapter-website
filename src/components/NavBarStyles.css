@@ -33,3 +33,8 @@
 .custom-navbar .dropdown-item:hover {
   color: #EEAA00; /* Sets the hover color of the dropdown items */
 }
+
+.navbar-crest {
+  height: 50px; /* adjust as needed */
+  width: auto; /* keep image aspect ratio */
+}

@@ -52,4 +52,7 @@ TODO:
 
 -use premade components like maybe React-Bootstrap's Figure component or something to dynamically display a list of active members. Maybe I can have it loop through a dictionary, array, obj. of members
 - I would probably need to put these into grid components as well.
+
+
+-Implement Grid system
 */

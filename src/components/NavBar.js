@@ -5,11 +5,13 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import './NavBarStyles.css';
 import crest from '../assets/images/crest.png';
 
+import { Link } from 'react-router-dom';
+
 export const NavBar = () => {
   return (
     <Navbar expand="lg" className="custom-navbar">
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <img src={crest} alt='Crest' className='navbar-crest' />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -27,7 +29,7 @@ export const NavBar = () => {
                 Separated link
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#link">Hermanos</Nav.Link>
+            <Nav.Link href='/hermanos'>Hermanos</Nav.Link>
             <Nav.Link href="#home">Contact Us</Nav.Link>
           </Nav>
         </Navbar.Collapse>
@@ -35,3 +37,5 @@ export const NavBar = () => {
     </Navbar>
   );
 }
+
+// Use Link from react-router-dom instead of Nav.Link? 

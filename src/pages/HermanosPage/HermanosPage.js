@@ -58,16 +58,18 @@ export const HermanosPage = () => {
           </Row>
         </Container>
       </div>
-      {members.map((line, index) => (
-        <div className="members-section" key={index}>
-          <h2>{line.lineName}</h2>
-          <ListGroup>
-            {line.members.map((member, index) => (
-              <ListGroup.Item key={index}>{member}</ListGroup.Item>
-            ))}
-          </ListGroup>
-        </div>
-      ))}
+      <Container>
+        {members.map((line, index) => (
+          <div className="members-section" key={index}>
+            <h2>{line.lineName}</h2>
+            <ListGroup>
+              {line.members.map((member, index) => (
+                <ListGroup.Item key={index}>{member}</ListGroup.Item>
+              ))}
+            </ListGroup>
+          </div>
+        ))}
+      </Container>
     </main>
   );
 };

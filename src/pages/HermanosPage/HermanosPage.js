@@ -46,13 +46,15 @@ export const HermanosPage = () => {
           <h2>Undergraduate Hermanos</h2>
           <Row>
             {undergrads.map((undergrad, index) => (
-              <Col key={index}>
+              <Col xs={12} md={4} key={index}>
+                <div className="px-md-3">
                 <Card style={{ width: "18rem" }}>
                   <Card.Img variant="top" src={undergrad.src} />
                   <Card.Body>
                     <Card.Text>{undergrad.caption}</Card.Text>
                   </Card.Body>
                 </Card>
+                </div>
               </Col>
             ))}
           </Row>

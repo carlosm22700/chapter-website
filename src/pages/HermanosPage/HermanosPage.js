@@ -1,4 +1,6 @@
 import Figure from 'react-bootstrap/Figure';
+import headshot from '../../assets/images/headshot.jpg'
+import { Col, Row, Container } from 'react-bootstrap';
 
 export const HermanosPage = () => {
     return (
@@ -6,17 +8,49 @@ export const HermanosPage = () => {
             <h1>Hermanos Page</h1>
             <div className="undergrads-section">
                 <h2>Undergraduate Hermanos</h2>
-                <Figure>
-                    <Figure.Image
-                        width={171}
-                        height={180}
-                        alt="171x180"
-                        src="holder.js/171x180"
-                    />
-                    <Figure.Caption>
-                        Nulla vitae elit libero, a pharetra augue mollis interdum.
-                    </Figure.Caption>
-                </Figure>
+                <Container>
+                <Row>
+                    <Col>
+                        <Figure>
+                            <Figure.Image
+                                width={171}
+                                height={180}
+                                alt="171x180"
+                                src={headshot}
+                            />
+                            <Figure.Caption>
+                                Nulla vitae elit libero, a pharetra augue mollis interdum.
+                            </Figure.Caption>
+                        </Figure>
+                    </Col>
+                    <Col>
+                        <Figure>
+                            <Figure.Image
+                                width={171}
+                                height={180}
+                                alt="171x180"
+                                src={headshot}
+                            />
+                            <Figure.Caption>
+                                Nulla vitae elit libero, a pharetra augue mollis interdum.
+                            </Figure.Caption>
+                        </Figure>
+                    </Col>
+                    <Col>
+                        <Figure>
+                            <Figure.Image
+                                width={171}
+                                height={180}
+                                alt="171x180"
+                                src={headshot}
+                            />
+                            <Figure.Caption>
+                                Nulla vitae elit libero, a pharetra augue mollis interdum.
+                            </Figure.Caption>
+                        </Figure>
+                    </Col>
+                </Row>
+                </Container>
             </div>
             <div className="members-section">
                 <h2>Chapter Members</h2>

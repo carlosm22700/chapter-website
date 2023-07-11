@@ -56,7 +56,7 @@ export const HermanosPage = () => {
                 <h2>Chapter Members</h2>
                 <h3>Alpha Line</h3>
                     <ul>
-                        <p>Carlos Gomez</p>
+                        <p>Carlos Gomez Guzman</p>
                         <p>Rene Emanuel Calzadilla</p>
                         <p>Carlos Steven Martinez</p>
                         <p>Douglas Alberto Moreno</p>

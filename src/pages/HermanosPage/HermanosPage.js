@@ -1,6 +1,7 @@
 import { ListGroup, Card } from "react-bootstrap";
 import headshot from "../../assets/images/headshot.jpg";
 import { Col, Row, Container } from "react-bootstrap";
+import "./HermanosPageStyles.css";
 
 export const HermanosPage = () => {
   const members = [

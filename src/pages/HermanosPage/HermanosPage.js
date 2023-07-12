@@ -47,13 +47,14 @@ export const HermanosPage = () => {
           <Row>
             {undergrads.map((undergrad, index) => (
               <Col xs={12} md={4} key={index}>
+                {/* sets up cards so that its 3 in a row */}
                 <div className="px-md-3">
-                <Card style={{ width: "18rem" }}>
-                  <Card.Img variant="top" src={undergrad.src} />
-                  <Card.Body>
-                    <Card.Text>{undergrad.caption}</Card.Text>
-                  </Card.Body>
-                </Card>
+                  <Card style={{ width: "18rem" }}>
+                    <Card.Img variant="top" src={undergrad.src} />
+                    <Card.Body>
+                      <Card.Text>{undergrad.caption}</Card.Text>
+                    </Card.Body>
+                  </Card>
                 </div>
               </Col>
             ))}

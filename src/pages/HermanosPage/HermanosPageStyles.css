@@ -1,24 +1,161 @@
+/* =========================
+   Global Styles
+   ========================= */
+
 body {
   background-color: #f4f4f4;
-  font-family: Stellar, Helvetica, sans-serif;
-}
-
-h1,
-h2,
-h3 {
-  color: #653819;
+  font-family: "Helvetica Neue", sans-serif;
 }
 
 .container {
-  max-width: 960px;
+  max-width: 100%;
   margin: auto;
-  padding: 2em;
 }
 
-.undergrads-section,
-.members-section {
-  margin-bottom: 2em;
+.list-group-item {
+  border: none;
+  background-color: #f4f4f4;
 }
+
+.list-group-item:first-child {
+  border-top: 1px solid #ddd;
+}
+
+.list-group-item:last-child {
+  border-bottom: 1px solid #ddd;
+}
+
+.hermano-caption {
+  color: #663819;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.hermano-info h3 {
+  color: #663819;
+  margin-bottom: 1rem;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: none;
+  border: 0;
+}
+
+h2.text-center {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h3.text-center {
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+
+/* =========================
+   Hero Section 
+   ========================= */
+
+.hero-section {
+  height: 90vh;
+  background-color: #f7f7f7; /* Matched with the definition section background */
+}
+
+.definition-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  padding-left: 10%; /* Introduced padding to control spacing */
+  padding-right: 5%;
+}
+
+.definition-content {
+  text-align: center;
+}
+
+.main-title {
+  font-size: 6rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  font-family: Stellar;
+  color: #eeaa00;
+}
+
+.pronunciation {
+  font-style: italic;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #653819;
+}
+
+.definition {
+  font-size: 1.7rem;
+  font-family: Helvetica;
+  color: #653819;
+}
+
+.image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5%; /* Introduced padding to control spacing */
+  padding-right: 10%;
+  overflow: hidden;
+  height: 100%;
+}
+
+.hero-image {
+  max-width: 100%;
+  max-height: 90%;
+  display: block;
+  object-fit: cover;
+}
+
+/* =========================
+   Undegraduate Section 
+   ========================= */
+
+h2.centered-title {
+  font-family: Stellar;
+  font-size: 4rem;
+  padding: 30px;
+  margin-top: 40px;
+}
+
+/* =========================
+   Hermano History Section 
+   ========================= */
+
+.history-title {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.hermano-card {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.hermano-card-body {
+  padding: 1rem;
+}
+
+.line-number {
+  font-size: 16px;
+  color: #555;
+}
+
+/* =========================
+   Common Card Styles 
+   ========================= */
 
 .card {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
@@ -33,22 +170,7 @@ h3 {
 
 .card img {
   max-width: 100%;
-  max-height: 100%;
   height: auto;
-  width: auto;
-}
-
-.list-group-item {
-  border: none;
-  background-color: #f4f4f4;
-}
-
-.list-group-item:first-child {
-  border-top: 1px solid #ddd;
-}
-
-.list-group-item:last-child {
-  border-bottom: 1px solid #ddd;
 }
 
 .card-text {

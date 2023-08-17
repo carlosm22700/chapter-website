@@ -2,6 +2,8 @@ import { ListGroup, Card, Col, Row, Container } from "react-bootstrap";
 import headshot from "../../assets/images/headshot.jpg";
 import hermanosImage from "../../assets/images/hermanos.jpg";
 import "./HermanosPageStyles.css";
+import alphaImg from "../../assets/images/Alpha.png";
+import betaImg from "../../assets/images/Beta.png";
 
 export const HermanosPage = () => {
   const ALPHA = [
@@ -9,6 +11,7 @@ export const HermanosPage = () => {
       lineDesignation: "Alpha",
       lineName: "Las Nuevas Raízes Del Amanecer Dorado",
       season: "SPRING 2023",
+      shieldImg: alphaImg,
       hermanos: [
         {
           firstName: "Carlos",
@@ -88,6 +91,7 @@ export const HermanosPage = () => {
       lineDesignation: "Beta",
       lineName: "THE COOLEST BOYS ON THE BLOCK",
       season: "SPRING 2023",
+      shieldImg: betaImg,
       hermanos: [
         {
           firstName: "Lefter",
@@ -154,75 +158,89 @@ export const HermanosPage = () => {
     <main>
       <Container>
         {/* Hero Section */}
-        <Container fluid className="hero-section">
-          <Row noGutters className="h-100">
-            <Col md={6} className="definition-section">
-              <div className="definition-content">
-                <h1 className="main-title">Hermanos</h1>
-                <p className="pronunciation">
-                  <strong>/er-ma-nos/</strong>
-                </p>
-                <p className="definition">
-                  Brothers in the Spanish language. La Unidad Latina’s greatest
-                  strength is its Hermanos...
-                </p>
-              </div>
-            </Col>
-            <Col md={6} className="image-section">
-              <img
-                className="hero-image"
-                src={hermanosImage}
-                alt="Group Picture"
-              />
-            </Col>
-          </Row>
-        </Container>
+        <section>
+          <Container fluid className="hero-section">
+            <Row noGutters className="h-100">
+              <Col md={6} className="definition-section">
+                <div className="definition-content">
+                  <h1 className="main-title">Hermanos</h1>
+                  <p className="pronunciation">
+                    <strong>/er-ma-nos/</strong>
+                  </p>
+                  <p className="definition">
+                    Spanish term for <strong>Brother</strong>. La Unidad
+                    Latina’s greatest strength is its Hermanos. Hermanos serve
+                    as a beacon of <strong>academic</strong>,{" "}
+                    <strong>social</strong>, and{" "}
+                    <strong>professional excellence</strong> on campus. Bound by
+                    shared values that drive mentorship and support across
+                    generations, chanpters, and regions. This brotherhood
+                    leverages its collective resources and network to{" "}
+                    <strong>thrive in competitive spaces</strong>, be it
+                    academia, community service, or professional .
+                  </p>
+                </div>
+              </Col>
+              <Col md={6} className="image-section">
+                <img
+                  className="hero-image"
+                  src={hermanosImage}
+                  alt="Group Picture"
+                />
+              </Col>
+            </Row>
+          </Container>
+        </section>
 
         {/* Undergraduate Section */}
-        <h2 className="centered-title">Undergraduates</h2>
-        <Row>
-          {undergrads.map((undergrad, index) => (
-            <Col xs={12} md={4} key={index}>
-              <Card className="undergrad-card">
-                <Card.Img variant="top" src={undergrad.src || headshot} />
-                <Card.Body>
-                  <Card.Title>
-                    {undergrad.firstName} {undergrad.lastName}
-                  </Card.Title>
-                  <Card.Text className="join-date">
-                    {undergrad.joinDate}
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-          ))}
-        </Row>
+        <section>
+          <Row>
+            <h2 className="centered-title">Undergraduates</h2>
+            {undergrads.map((undergrad, index) => (
+              <Col xs={12} md={4} key={index}>
+                <div className="undergrad-circle">
+                  <img
+                    src={undergrad.src || headshot}
+                    alt={`${undergrad.firstName} ${undergrad.lastName}`}
+                  />
+                </div>
+                <div className="undergrad-name">
+                  {undergrad.firstName} {undergrad.lastName}
+                </div>
+                <div className="join-date">{undergrad.joinDate}</div>
+              </Col>
+            ))}
+          </Row>
+        </section>
 
         {/* Hermano History Section */}
-        <h2 className="history-title">Hermano History</h2>
-        {lines.map((line, idx) => (
-          <div key={idx} className="line-section">
-            <h3>
-              {line.lineName} - {line.season}
-            </h3>
-            <Row>
-              {line.hermanos.map((hermano, hIdx) => (
-                <Col xs={12} md={3} key={hIdx}>
-                  <Card className="hermano-card">
-                    <Card.Body>
-                      <Card.Title>
-                        {hermano.firstName} {hermano.lastName}
-                      </Card.Title>
-                      <Card.Text className="line-number">
-                        {hermano.lineNumber}
-                      </Card.Text>
-                    </Card.Body>
-                  </Card>
-                </Col>
-              ))}
-            </Row>
-          </div>
-        ))}
+        <section>
+          <h2 className="history-title">Hermano History</h2>
+          {lines.map((line, idx) => (
+            <div key={idx} className="line-section">
+              <div className="line-header">
+                <img
+                  src={line.shieldImg}
+                  alt={`${line.lineDesignation} Shield`}
+                  className="shield-img"
+                />
+                <div className="line-title-section">
+                  <h3 className="line-title">
+                    {line.lineDesignation} | {line.season}
+                  </h3>
+                  <p className="line-name">"{line.lineName}"</p>
+                </div>
+              </div>
+              <ul className="hermano-list">
+                {line.hermanos.map((hermano, hIdx) => (
+                  <li key={hIdx}>
+                    {hIdx + 1}. {hermano.firstName} {hermano.lastName}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </section>
       </Container>
     </main>
   );

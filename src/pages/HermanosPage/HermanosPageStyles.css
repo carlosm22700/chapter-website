@@ -83,8 +83,7 @@ h3.text-center {
   justify-content: center;
   align-items: center;
   background-color: #f7f7f7;
-  padding-left: 10%; /* Introduced padding to control spacing */
-  padding-right: 5%;
+  padding: 0 5% 0 10%;
 }
 
 .definition-content {
@@ -117,8 +116,7 @@ h3.text-center {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 5%; /* Introduced padding to control spacing */
-  padding-right: 10%;
+  padding: 0 10% 0 5%;
   overflow: hidden;
   height: 100%;
 }
@@ -160,7 +158,6 @@ h2.centered-title {
   width: 100%; /* Increased the width and height to make the image larger */
   height: 100%;
   object-fit: cover;
-  align-self: center;
 }
 
 .undergrad-name {
@@ -284,4 +281,54 @@ h2.centered-title {
   font-weight: 600;
   text-align: center; /* Align the name to the center */
   color: #653819;
+}
+
+/* =========================
+   Responsiveness
+   ========================= */
+
+@media only screen and (max-width: 768px) {
+  .main-title {
+    font-size: 4rem;
+  }
+
+  .pronunciation {
+    font-size: 2rem;
+  }
+
+  .undergrad-circle {
+    width: 300px;
+    height: 300px;
+  }
+
+  .hero-section {
+    height: auto;
+  }
+
+  h2.centered-title {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .main-title {
+    font-size: 2.5rem;
+  }
+
+  .pronunciation {
+    font-size: 1.5rem;
+  }
+
+  .undergrad-circle {
+    width: 200px;
+    height: 200px;
+  }
+
+  .hero-section {
+    padding: 1rem;
+  }
+
+  h2.centered-title {
+    font-size: 2rem;
+  }
 }

@@ -1,5 +1,5 @@
 .custom-navbar {
-  background-color: #EEAA00; /* Sets the background color of the navbar */
+  background-color: #eeaa00; /* Sets the background color of the navbar */
   padding: 0 1rem;
 }
 
@@ -10,8 +10,8 @@
 }
 
 .custom-navbar .container {
-    max-width: 100%; /* use full width of the navbar*/
-    padding: 0 1rem; /* Adjust the padding as needed */
+  max-width: 100%; /* use full width of the navbar*/
+  padding: 0 1rem; /* Adjust the padding as needed */
 }
 
 .custom-navbar .nav-link {
@@ -23,7 +23,7 @@
 }
 
 .custom-navbar .dropdown-menu {
-  background-color: #EEAA00; /* Sets the background color of the dropdown menu */
+  background-color: #eeaa00; /* Sets the background color of the dropdown menu */
 }
 
 .custom-navbar .dropdown-item {
@@ -31,7 +31,7 @@
 }
 
 .custom-navbar .dropdown-item:hover {
-  color: #EEAA00; /* Sets the hover color of the dropdown items */
+  color: #eeaa00; /* Sets the hover color of the dropdown items */
 }
 
 .navbar-crest {

@@ -17,10 +17,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-
 
 .logo-container {
   position: absolute;
@@ -39,18 +38,18 @@
   width: auto;
 }
 
-
 .hero-title {
   font-family: Stellar, Helvetica, sans-serif;
   font-size: 3rem;
   font-weight: 800;
-  color:#EEAA00;
+  color: #eeaa00;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .details-section {
   padding: 3rem 0;
   text-align: center;
+  overflow: hidden;
 }
 
 .details-title {
@@ -70,9 +69,9 @@
 
 .details-button {
   font-family: Stellar, Helvetica, sans-serif;
-  background-color: #EEAA00;
-  border-color: #EEAA00;
-  color: #FFFFFF;
+  background-color: #eeaa00;
+  border-color: #eeaa00;
+  color: #ffffff;
 }
 
 .details-button:hover,
@@ -80,5 +79,5 @@
 .details-button:active {
   background-color: #653819;
   border-color: #653819;
-  color: #FFFFFF;
+  color: #ffffff;
 }

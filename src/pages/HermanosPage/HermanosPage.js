@@ -5,146 +5,164 @@ import "./HermanosPageStyles.css";
 import alphaImg from "../../assets/images/Alpha.png";
 import betaImg from "../../assets/images/Beta.png";
 
+const ALPHA = [
+  {
+    lineDesignation: "Alpha",
+    lineName: "Las Nuevas Raízes Del Amanecer Dorado",
+    season: "SPRING 2023",
+    shieldImg: alphaImg,
+    hermanos: [
+      {
+        firstName: "Carlos",
+        lastName: "Gomez",
+        hermanoName: "Gomezki",
+        lineNumber: 1,
+        undergraduate: false,
+      },
+      {
+        firstName: "Rene",
+        lastName: "Calzadilla",
+        hermanoName: "Gomezki",
+        lineNumber: 2,
+        undergraduate: false,
+      },
+      {
+        firstName: "Carlos",
+        lastName: "Martinez",
+        hermanoName: "Sagaz",
+        lineNumber: 3,
+        undergraduate: false,
+      },
+      {
+        firstName: "Carlos",
+        lastName: "Gomez",
+        hermanoName: "Gomezki",
+        lineNumber: 4,
+        undergraduate: false,
+      },
+      {
+        firstName: "Carlos",
+        lastName: "Gomez",
+        hermanoName: "Gomezki",
+        lineNumber: 5,
+        undergraduate: false,
+      },
+      {
+        firstName: "Carlos",
+        lastName: "Gomez",
+        hermanoName: "Gomezki",
+        lineNumber: 6,
+        undergraduate: false,
+      },
+      {
+        firstName: "Carlos",
+        lastName: "Gomez",
+        hermanoName: "Gomezki",
+        lineNumber: 7,
+        undergraduate: false,
+      },
+      {
+        firstName: "Carlos",
+        lastName: "Gomez",
+        hermanoName: "Gomezki",
+        lineNumber: 8,
+        undergraduate: false,
+      },
+      {
+        firstName: "Carlos",
+        lastName: "Gomez",
+        hermanoName: "Gomezki",
+        lineNumber: 9,
+        undergraduate: false,
+      },
+      {
+        firstName: "Carlos",
+        lastName: "Gomez",
+        hermanoName: "Gomezki",
+        lineNumber: 10,
+        undergraduate: false,
+      },
+    ],
+  },
+];
+const BETA = [
+  {
+    lineDesignation: "Beta",
+    lineName: "THE COOLEST BOYS ON THE BLOCK",
+    season: "SPRING 2023",
+    shieldImg: betaImg,
+    hermanos: [
+      {
+        firstName: "Lefter",
+        lastName: "Mendoza",
+        hermanoName: "Gomezki",
+        lineNumber: 1,
+        undergraduate: false,
+      },
+      {
+        firstName: "Javier",
+        lastName: "Jauregui",
+        hermanoName: "Inactivo",
+        lineNumber: 2,
+        undergraduate: true,
+        src: headshot,
+      },
+      {
+        firstName: "Assael",
+        lastName: "Mendez",
+        hermanoName: "Gomezki",
+        lineNumber: 3,
+        undergraduate: true,
+        src: headshot,
+      },
+      {
+        firstName: "Jonathan",
+        lastName: "Teach",
+        hermanoName: "Gomezki",
+        lineNumber: 4,
+        undergraduate: false,
+      },
+      {
+        firstName: "Manuel",
+        lastName: "Gutierrez",
+        hermanoName: "Gomezki",
+        lineNumber: 5,
+        undergraduate: false,
+      },
+      {
+        firstName: "Luis",
+        lastName: "Dripperton",
+        hermanoName: "BigHead",
+        lineNumber: 6,
+        undergraduate: true,
+        src: headshot,
+      },
+    ],
+  },
+];
+
+const lines = [...ALPHA, ...BETA];
+
+const HermanosGrid = ({ hermanos }) => (
+  <Row className="mb-5">
+    {hermanos.slice(0, 3).map((hermano, index) => (
+      <Col key={index} md={4} className="text-center">
+        <div className="undergrad-circle">
+          <img
+            src={hermano.src || headshot}
+            alt={`${hermano.firstName} ${hermano.lastName}`}
+            className="img-fluid"
+          />
+        </div>
+        <div className="undergrad-name">
+          {hermano.firstName} {hermano.lastName}
+        </div>
+      </Col>
+    ))}
+  </Row>
+);
+
 export const HermanosPage = () => {
-  const ALPHA = [
-    {
-      lineDesignation: "Alpha",
-      lineName: "Las Nuevas Raízes Del Amanecer Dorado",
-      season: "SPRING 2023",
-      shieldImg: alphaImg,
-      hermanos: [
-        {
-          firstName: "Carlos",
-          lastName: "Gomez",
-          hermanoName: "Gomezki",
-          lineNumber: 1,
-          undergraduate: false,
-        },
-        {
-          firstName: "Rene",
-          lastName: "Calzadilla",
-          hermanoName: "Gomezki",
-          lineNumber: 2,
-          undergraduate: false,
-        },
-        {
-          firstName: "Carlos",
-          lastName: "Martinez",
-          hermanoName: "Sagaz",
-          lineNumber: 3,
-          undergraduate: false,
-        },
-        {
-          firstName: "Carlos",
-          lastName: "Gomez",
-          hermanoName: "Gomezki",
-          lineNumber: 4,
-          undergraduate: false,
-        },
-        {
-          firstName: "Carlos",
-          lastName: "Gomez",
-          hermanoName: "Gomezki",
-          lineNumber: 5,
-          undergraduate: false,
-        },
-        {
-          firstName: "Carlos",
-          lastName: "Gomez",
-          hermanoName: "Gomezki",
-          lineNumber: 6,
-          undergraduate: false,
-        },
-        {
-          firstName: "Carlos",
-          lastName: "Gomez",
-          hermanoName: "Gomezki",
-          lineNumber: 7,
-          undergraduate: false,
-        },
-        {
-          firstName: "Carlos",
-          lastName: "Gomez",
-          hermanoName: "Gomezki",
-          lineNumber: 8,
-          undergraduate: false,
-        },
-        {
-          firstName: "Carlos",
-          lastName: "Gomez",
-          hermanoName: "Gomezki",
-          lineNumber: 9,
-          undergraduate: false,
-        },
-        {
-          firstName: "Carlos",
-          lastName: "Gomez",
-          hermanoName: "Gomezki",
-          lineNumber: 10,
-          undergraduate: false,
-        },
-      ],
-    },
-  ];
-  const BETA = [
-    {
-      lineDesignation: "Beta",
-      lineName: "THE COOLEST BOYS ON THE BLOCK",
-      season: "SPRING 2023",
-      shieldImg: betaImg,
-      hermanos: [
-        {
-          firstName: "Lefter",
-          lastName: "Mendoza",
-          hermanoName: "Gomezki",
-          lineNumber: 1,
-          undergraduate: false,
-        },
-        {
-          firstName: "Javier",
-          lastName: "Jauregui",
-          hermanoName: "Inactivo",
-          lineNumber: 2,
-          undergraduate: true,
-          src: headshot,
-        },
-        {
-          firstName: "Assael",
-          lastName: "Mendez",
-          hermanoName: "Gomezki",
-          lineNumber: 3,
-          undergraduate: true,
-          src: headshot,
-        },
-        {
-          firstName: "Jonathan",
-          lastName: "Teach",
-          hermanoName: "Gomezki",
-          lineNumber: 4,
-          undergraduate: false,
-        },
-        {
-          firstName: "Manuel",
-          lastName: "Gutierrez",
-          hermanoName: "Gomezki",
-          lineNumber: 5,
-          undergraduate: false,
-        },
-        {
-          firstName: "Luis",
-          lastName: "Dripperton",
-          hermanoName: "BigHead",
-          lineNumber: 6,
-          undergraduate: true,
-          src: headshot,
-        },
-      ],
-    },
-  ];
-
-  //create array lines that spreads each LINE (ALPHA, BETA)
-  const lines = [...ALPHA, ...BETA];
-
   const undergrads = lines.flatMap((line) =>
     line.hermanos
       .filter((hermano) => hermano.undergraduate)

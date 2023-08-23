@@ -1,9 +1,9 @@
+import { AboutBanner } from "../../components/AboutBanner";
 export const AboutPage = () => {
   return (
     <div>
       <section className="hero">
-        <h1>About La Unidad Latina</h1>
-        {/* Optionally include a background image, video, or other visuals */}
+        <AboutBanner />
       </section>
 
       <section className="about-story">

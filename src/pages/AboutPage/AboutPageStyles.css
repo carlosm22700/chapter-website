@@ -1,0 +1,99 @@
+/* =========================
+            Hero
+   ========================= */
+
+.hero {
+  background: url("path-to-image.jpg") no-repeat center center;
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+/* =========================
+        About Story
+   ========================= */
+
+.about-story {
+  padding: 4rem 0;
+  background: #f4f4f4;
+  font-size: 1.2em;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* =========================
+        Facts & Milestones
+   ========================= */
+
+.facts-milestones {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 4rem 0;
+}
+
+.fact-card {
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.fact-card:hover {
+  transform: translateY(-5px);
+}
+
+/* =========================
+        pillars/Values
+   ========================= */
+.pillars-values {
+  padding: 4rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pillar {
+  flex: 1;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* =========================
+    Awards & Recognitions
+   ========================= */
+
+.awards-recognitions {
+  background: #f4f4f4;
+  padding: 4rem 0;
+}
+
+.award-badge {
+  margin: 1rem;
+}
+
+/* =========================
+    Foundign History
+   ========================= */
+
+.founding-history {
+  padding: 4rem 0;
+  background: #fff;
+}
+
+/* =========================
+             FAQ
+   ========================= */
+
+.faq {
+  padding: 4rem 0;
+  background: #f4f4f4;
+}
+
+.accordion-item {
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+}

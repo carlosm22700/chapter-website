@@ -145,17 +145,22 @@ const lines = [...ALPHA, ...BETA];
 
 const HermanosGrid = ({ hermanos }) => (
   <Row className="mb-5">
-    {hermanos.slice(0, 3).map((hermano, index) => (
+    {hermanos.map((hermano, index) => (
       <Col key={index} md={4} className="text-center">
-        <div className="undergrad-circle">
-          <img
-            src={hermano.src || headshot}
-            alt={`${hermano.firstName} ${hermano.lastName}`}
-            className="img-fluid"
-          />
-        </div>
-        <div className="undergrad-name">
-          {hermano.firstName} {hermano.lastName}
+        <div className="undergrad-container">
+          <div className="undergrad-circle">
+            <img
+              src={hermano.src || headshot}
+              alt={`${hermano.firstName} ${hermano.lastName}`}
+              className="img-fluid"
+            />
+          </div>
+          <div className="undergrad-info">
+            <div className="undergrad-name">
+              {`${hermano.firstName} ${hermano.lastName}`}
+            </div>
+            <div className="join-date">{hermano.joinDate}</div>
+          </div>
         </div>
       </Col>
     ))}
@@ -192,7 +197,7 @@ export const HermanosPage = () => {
                     <strong>social</strong>, and{" "}
                     <strong>professional excellence</strong> on campus. Bound by
                     shared values that drive mentorship and support across
-                    generations, chanpters, and regions. This brotherhood
+                    generations, chapters, and regions. Our brotherhood
                     leverages its collective resources and network to{" "}
                     <strong>thrive in competitive spaces</strong>, be it
                     academia, community service, or professional .
@@ -212,23 +217,8 @@ export const HermanosPage = () => {
 
         {/* Undergraduate Section */}
         <section>
-          <Row>
-            <h2 className="centered-title">Undergraduates</h2>
-            {undergrads.map((undergrad, index) => (
-              <Col xs={12} md={4} key={index}>
-                <div className="undergrad-circle">
-                  <img
-                    src={undergrad.src || headshot}
-                    alt={`${undergrad.firstName} ${undergrad.lastName}`}
-                  />
-                </div>
-                <div className="undergrad-name">
-                  {undergrad.firstName} {undergrad.lastName}
-                </div>
-                <div className="join-date">{undergrad.joinDate}</div>
-              </Col>
-            ))}
-          </Row>
+          <h2 className="centered-title">Undergraduates</h2>
+          <HermanosGrid hermanos={undergrads} />
         </section>
 
         {/* Hermano History Section */}

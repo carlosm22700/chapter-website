@@ -58,7 +58,7 @@ export const AboutBanner = () => {
         <div>
           <span className="tagline">About Us</span>
           <h1>
-            {`La Unidad Latina`} <br />
+            {/* {`La Unidad Latina`} <br /> */}
             <span className="wrap">{text}</span>
           </h1>
           {/* <p>

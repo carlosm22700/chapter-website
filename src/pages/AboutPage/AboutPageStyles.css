@@ -1,17 +1,43 @@
+@font-face {
+  font-family: Stellar;
+  src: url("../../assets/fonts/Stellar-Regular.otf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Stellar;
+  src: url("../../assets/fonts/Stellar-Bold.otf");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: Stellar;
+  src: url("../../assets/fonts/Stellar-light.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Stellar;
+  src: url("../../assets/fonts/Stellar-Medium.otf");
+  font-weight: 500;
+}
 /* =========================
             Hero
    ========================= */
 
 .hero {
-  background: url("path-to-image.jpg") no-repeat center center;
+  font-family: Stellar, Helvetica, sans-serif;
+  background-image: url("../../assets/images/banner-bg.png");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
   font-size: 2.5em;
-  font-weight: bold;
+  font-weight: 800;
 }
 
 /* =========================

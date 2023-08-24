@@ -1,4 +1,6 @@
 import { AboutBanner } from "../../components/AboutBanner";
+import "./AboutPageStyles.css";
+
 export const AboutPage = () => {
   return (
     <div>

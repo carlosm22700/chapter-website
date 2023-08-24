@@ -1,9 +1,10 @@
 import { ListGroup, Card, Col, Row, Container } from "react-bootstrap";
 import headshot from "../../assets/images/headshot.jpg";
 import hermanosImage from "../../assets/images/hermanos.jpg";
-import "./HermanosPageStyles.css";
 import alphaImg from "../../assets/images/Alpha.png";
 import betaImg from "../../assets/images/Beta.png";
+
+import "./HermanosPageStyles.css";
 
 const ALPHA = [
   {

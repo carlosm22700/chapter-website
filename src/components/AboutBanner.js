@@ -9,6 +9,8 @@ import {
 } from "react-bootstrap-icons";
 import headerImg from "../assets/images/logo2.png";
 
+import "./AboutBannerStyles.css";
+
 export const AboutBanner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -53,15 +55,13 @@ export const AboutBanner = () => {
   return (
     <section className="banner" id="home">
       <Container>
-        <Row className="align-items-center">
-          <Col xs={12} md={6} xl={6}>
-            <div>
-              <span className="tagline">About Us</span>
-              <h1>
-                {`La Unidad Latina`} <br />
-                <span className="wrap">{text}</span>
-              </h1>
-              {/* <p>
+        <div>
+          <span className="tagline">About Us</span>
+          <h1>
+            {`La Unidad Latina`} <br />
+            <span className="wrap">{text}</span>
+          </h1>
+          {/* <p>
                 {" "}
                 I'm a detail-oriented software engineer with a passion for
                 front-end development and data analysis. I enjoy creating
@@ -71,25 +71,21 @@ export const AboutBanner = () => {
                 am continuously improving my skills to stay on the cutting edge
                 of technology. Feel free to browse my projects and get in touch!
               </p> */}
-              <a className="contact-link" href="/contact">
-                <button
-                  className="contact-button"
-                  onClick={() => console.log("connect")}
-                >
-                  Contact Us <ArrowRightCircle size={25} />
-                </button>
-              </a>
-            </div>
-          </Col>
-          <Col xs={12} md={6} xl={6}>
-            <img
-              src={headerImg}
-              alt="Header Img"
-              className="about-banner-img"
-              style={{ width: "400px", height: "auto" }}
-            />
-          </Col>
-        </Row>
+          <a className="contact-link" href="/contact">
+            <button
+              className="contact-button"
+              onClick={() => console.log("connect")}
+            >
+              Contact Us <ArrowRightCircle size={25} />
+            </button>
+          </a>
+        </div>
+        {/* <img
+          src={headerImg}
+          alt="Header Img"
+          className="about-banner-img"
+          style={{ width: "400px", height: "auto" }}
+        /> */}
       </Container>
     </section>
   );

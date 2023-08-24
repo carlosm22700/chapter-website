@@ -1,63 +1,70 @@
+@font-face {
+  font-family: Stellar;
+  src: url("../assets/fonts/Stellar-Medium.otf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Stellar;
+  src: url("../assets/fonts/Stellar-Bold.otf");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: Stellar;
+  src: url("../assets/fonts/Stellar-light.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Stellar;
+  src: url("../assets//fonts/Stellar-Regular.otf");
+  font-weight: 500;
+}
+
 /* =========================
    Colors
    ========================= */
-:root {
+/* * {
   --main-bg-color: #f4f4f4;
   --main-text-color: #663819;
   --highlight-color: #653819;
   --underline-color: #eeaa00;
   --secondary-text-color: #cc0000;
   --light-text-color: #555;
-}
+} */
 
 /* =========================
    Global Styles
    ========================= */
 
-body {
-  background-color: var(--main-bg-color);
-  font-family: Stellar, "Helvetica Neue", sans-serif;
-}
-
-section {
-  padding: 2rem 0;
-}
-
-.container {
-  max-width: 100%;
-  margin: auto;
-}
-
-.list-group-item {
-  border: none;
-  background-color: var(--main-bg-color);
-}
-
-.list-group-item:first-child {
-  border-top: 1px solid #ddd;
-}
-
-.list-group-item:last-child {
-  border-bottom: 1px solid #ddd;
-}
-
 /************ Banner Css ************/
-.banner {
+/* .banner {
+  font-family: Stellar, Helvetica, sans-serif;
+  font-weight: 600;
   margin-top: 0;
   padding: 260px 0 100px 0;
   background-image: url("../assets/images/banner-bg.png");
   background-position: top center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-}
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 2.5em;
+  font-weight: 800;
+} */
+
 .banner .tagline {
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 0.8px;
   padding: 8px 10px;
   background: linear-gradient(
     90.21deg,
-    rgba(170, 54, 124, 0.5) -5.91%,
-    rgba(74, 47, 189, 0.5) 111.58%
+    rgba(234, 170, 0) -5.91%,
+    rgba(101, 56, 25) 111.58%
   );
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
@@ -65,6 +72,7 @@ section {
   display: inline-block;
 }
 .banner h1 {
+  /* font-family: Stellar; */
   font-size: 65px;
   font-weight: 700;
   letter-spacing: 0.8px;
@@ -98,20 +106,12 @@ section {
   margin-left: 25px;
 }
 
-/* .banner img {
-  animation: updown 3s linear infinite;
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-} */
-
 .about-banner-img {
   animation: updown 3s linear infinite;
-  max-width: 100px; /* Ensure it doesn't grow beyond its container */
-  max-height: 100px; /* Maintain aspect ratio */
+  width: 100px; /* Ensure it doesn't grow beyond its container */
+  height: 100px; /* Maintain aspect ratio */
   height: auto;
-  object-fit: contain;
-  display: block;
+  object-fit: cover;
 }
 @keyframes updown {
   0% {
@@ -138,6 +138,26 @@ a.contact-link:hover {
 }
 
 .contact-button {
+  animation: updown 3s linear infinite;
   border: 0;
   background-color: transparent;
+  display: block;
+  margin: 60px auto 0;
 }
+@keyframes updown {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+/* TODO:
+  1)Finish styling banner
+  2)Work on content for Hermanos Page
+  3)Work on contact form/research API or packages.
+  4)Get Feedback
+*/

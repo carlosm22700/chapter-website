@@ -1,9 +1,20 @@
 import { Container, Row, Col, Button } from "react-bootstrap";
 import heroImg from "../../assets/images/hero.jpg";
+import logo from "../../assets/images/logo.png";
+import logo2 from "../../assets/images/logo2.png";
+import logo3 from "../../assets/images/logo3.png";
 import clogo from "../../assets/images/clogo.png";
+import clogo2 from "../../assets/images/clogo2.png";
+import clogo3 from "../../assets/images/clogo3.png";
 import "./LandingPageStyles.css";
+import { useNavigate } from "react-router-dom";
 
 export const LandingPage = () => {
+  const navigate = useNavigate();
+  const navigateToAbout = () => {
+    navigate("/about");
+  };
+
   return (
     <div className="landing-page">
       <div className="hero-section">
@@ -28,7 +39,12 @@ export const LandingPage = () => {
               The University of California, Los Angeles
             </h2>
             <p className="details-description">Est. 2021</p>
-            <Button className="details-button" variant="primary" size="lg">
+            <Button
+              className="details-button"
+              variant="primary"
+              size="lg"
+              onClick={navigateToAbout}
+            >
               Learn More
             </Button>
           </Col>

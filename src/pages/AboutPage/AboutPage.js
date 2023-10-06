@@ -34,7 +34,7 @@ export const AboutPage = () => {
             </Row>
           </Container>
         </div>
-        <div className="story-content-section">
+        <div className="story-content-section reverse">
           <Container>
             <h2>A New Horizon: Beta Psi at UCLA</h2>
             <Row className="flex-container">
